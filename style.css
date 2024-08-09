@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Integrate fonts */
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 300 900;
+}
+@font-face {
+  font-family: "Young Serif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+  font-weight: 300 900;
+}
+
+/* Usefull variables */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-50: hsl(330, 100%, 98%);
+  --rose-800: hsl(332, 51%, 32%);
+}
+
+/* Some special classes */
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.gap-30 {
+  gap: 30px;
+}
+.h-full {
+  height: 100%;
+}
+.bold {
+  font-weight: 600;
+}
+
+body {
+  background-color: var(--stone-100);
+  padding-top: 125px;
+  padding-bottom: 125px;
+  font-family: "Outfit";
+  color: var(--stone-600);
+}
+
+main {
+  background-color: var(--white);
+  width: 737px;
+  border-radius: 20px;
+  padding: 39px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+h1 {
+  font-family: "Young Serif";
+  font-size: 42px;
+  color: var(--stone-900);
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+h2 {
+  font-family: "Young Serif";
+  font-size: 28px;
+  color: var(--brown-800);
+  font-weight: 400;
+  padding-bottom: 25px;
+}
+h3 {
+  color: var(--rose-800);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.presentation p {
+  color: var(--stone-600);
+  padding-bottom: 35px;
+}
+.nutrition p {
+  padding-bottom: 15px;
+}
+p {
+  padding-bottom: 15px;
+  line-height: 25px;
+}
+
+.presentation div {
+  background-color: var(--rose-50);
+  border-radius: 10px;
+  padding: 10px 35px;
+  color: var(--stone-900);
+}
+.presentation ul {
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+.ingredients ul,
+ol {
+  padding-left: 45px;
+  padding-bottom: 25px;
+}
+ul::marker {
+  padding-right: 50px;
+}
+
+li {
+  line-height: 25px;
+  padding-bottom: 6px;
+}
+
+.border-bot {
+  border-bottom: 1px solid var(--stone-150);
+}
+.row {
+  width: 100%;
+}
+.row h4 {
+  flex: 1;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 400;
+}
+.row p {
+  flex: 1;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: var(--brown-800);
+  font-weight: 600;
+}
