@@ -23,7 +23,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/stylish-and-responsive-recipe-page-cXGtx2bWEY)
 - Live Site URL: [Live link](https://jomagene.github.io/Recipe-page/)
 
 ## My Process
@@ -52,8 +52,6 @@ Here's a sample of code I'm proud of:
     class="h-full" />
 </figure>
 ```
-
-````
 
 ```css
 @font-face {
@@ -102,4 +100,3 @@ In future projects, I plan to:
 ## Acknowledgments
 
 I would like to thank the Frontend Mentor community for providing feedback and suggestions that helped me refine our skills.
-````
