@@ -1,8 +1,29 @@
 /* Global Reset */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  padding: 0;
+}
+* {
   margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+p,
+h1,
+h2 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
 }
 
 /* Font Integration */
@@ -21,7 +42,6 @@
   font-weight: 400 600;
   font-display: swap;
 }
-
 /* Useful Variables */
 :root {
   --white: hsl(0, 0%, 100%);
@@ -33,7 +53,6 @@
   --rose-50: hsl(330, 100%, 98%);
   --rose-800: hsl(332, 51%, 32%);
 }
-
 /* Utility Classes */
 .flex {
   display: flex;
@@ -175,29 +194,26 @@ li {
   font-size: 18px;
 }
 
-/* Rows */
-.row,
-.last-row {
+/* Table */
+tr {
   width: 100%;
   padding-left: 30px;
 }
 
-.row h3,
-.last-row h3 {
+td:first-child {
   flex: 1;
   padding: 10px 0;
   font-weight: 400;
 }
 
-.row p,
-.last-row p {
+td:last-child {
   flex: 1;
   padding: 10px 0;
   color: var(--brown-800);
   font-weight: 600;
 }
 
-.last-row p {
+.last-row td {
   padding-bottom: 0;
 }
 
