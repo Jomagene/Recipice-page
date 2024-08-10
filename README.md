@@ -1,6 +1,3 @@
-Here's the completed and corrected README for your project:
-
-````markdown
 # Frontend Mentor - Recipe Page Solution
 
 This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -55,6 +52,7 @@ Here's a sample of code I'm proud of:
     class="h-full" />
 </figure>
 ```
+
 ````
 
 ```css
@@ -104,3 +102,4 @@ In future projects, I plan to:
 ## Acknowledgments
 
 I would like to thank the Frontend Mentor community for providing feedback and suggestions that helped me refine our skills.
+````
