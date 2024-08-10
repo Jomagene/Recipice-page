@@ -1,3 +1,4 @@
+/* Global Reset */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,6 +12,7 @@
     format("truetype");
   font-weight: 300 900;
 }
+
 @font-face {
   font-family: "Young Serif";
   src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
@@ -18,7 +20,7 @@
   font-weight: 300 900;
 }
 
-/* Usefull variables */
+/* Useful variables */
 :root {
   --white: hsl(0, 0%, 100%);
   --stone-100: hsl(30, 54%, 90%);
@@ -30,34 +32,41 @@
   --rose-800: hsl(332, 51%, 32%);
 }
 
-/* Some special classes */
+/* Utility Classes */
 .flex {
   display: flex;
 }
+
 .column {
   flex-direction: column;
 }
+
 .justify-center {
   justify-content: center;
 }
+
 .items-center {
   align-items: center;
 }
+
 .gap-30 {
-  gap: 30px;
+  gap: 29px;
 }
+
 .h-full {
   height: 100%;
 }
+
 .bold {
   font-weight: 600;
 }
 
+/* Base Styles */
 body {
   background-color: var(--stone-100);
   padding-top: 125px;
   padding-bottom: 125px;
-  font-family: "Outfit";
+  font-family: "Outfit", sans-serif;
   color: var(--stone-600);
 }
 
@@ -74,38 +83,46 @@ main {
   border-radius: 20px;
   overflow: hidden;
 }
+
 img {
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
+
+/* Headings */
 h1 {
-  font-family: "Young Serif";
+  font-family: "Young Serif", serif;
   font-size: 40px;
   color: var(--stone-900);
   font-weight: 400;
   padding-bottom: 15px;
 }
+
 h2 {
-  font-family: "Young Serif";
+  font-family: "Young Serif", serif;
   font-size: 28px;
   color: var(--brown-800);
   font-weight: 400;
   padding-bottom: 18px;
 }
+
 h3 {
   color: var(--rose-800);
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
-.presentation p {
-  color: var(--stone-600);
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+  padding-top: 12px;
+  font-size: 20px;
 }
 
+/* Paragraphs */
 p {
   padding-bottom: 15px;
   line-height: 25px;
+}
+
+.presentation p {
+  color: var(--stone-600);
+  padding-bottom: 30px;
 }
 
 .presentation div {
@@ -114,54 +131,78 @@ p {
   padding: 20px 30px 10px;
   color: var(--stone-900);
 }
-.presentation ul {
-  padding-left: 20px;
+
+/* Lists */
+ul {
   padding-bottom: 15px;
+  list-style-type: none;
 }
 
-.ingredients ul,
+ul li::before {
+  content: ". ";
+  color: var(--rose-800);
+  font-weight: 900;
+  margin-right: 20px;
+}
+
 ol {
-  padding-left: 45px;
+  padding-left: 20px;
   padding-bottom: 25px;
 }
+
+.ingredients ul {
+  padding-bottom: 25px;
+}
+
 li {
-  line-height: 26px;
+  line-height: 25.5px;
   padding-bottom: 5px;
 }
 
-.border-bot {
-  border-bottom: 1px solid var(--stone-150);
+ol li {
+  padding-left: 20px;
 }
+
+/* Rows */
 .row {
   width: 100%;
   padding-left: 30px;
 }
+
 .row h4 {
   flex: 1;
   padding-top: 12px;
   padding-bottom: 10px;
   font-weight: 400;
 }
+
 .row p {
   flex: 1;
   padding-top: 12px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
   color: var(--brown-800);
   font-weight: 600;
 }
+
 .last-row {
   width: 100%;
   padding-left: 30px;
 }
+
 .last-row h4 {
   flex: 1;
   padding-top: 12px;
   font-weight: 400;
 }
+
 .last-row p {
   flex: 1;
   padding-top: 12px;
   padding-bottom: 0;
   color: var(--brown-800);
   font-weight: 600;
+}
+
+.border-bot {
+  border-bottom: 1px solid var(--stone-150);
 }
