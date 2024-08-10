@@ -104,7 +104,8 @@ main {
   }
 }
 
-section {
+section,
+header {
   margin-left: 41px;
   margin-right: 41px;
 }
@@ -150,7 +151,7 @@ p {
   padding-bottom: 30px;
 }
 
-.presentation div {
+.presentation section {
   background-color: var(--rose-50);
   border-radius: 10px;
   padding: 10px 30px 0;
@@ -186,6 +187,11 @@ li {
 
 ol li {
   padding-left: 20px;
+}
+ol li::marker {
+  color: var(--rose-800);
+  font-weight: 600;
+  font-size: 18px;
 }
 
 /* Rows */
