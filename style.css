@@ -81,7 +81,7 @@ main {
   background-color: var(--white);
   width: 737px;
   border-radius: 20px;
-  padding-bottom: 33px;
+  padding-bottom: 30px;
   box-shadow: 0 4px 8px rgba(172, 172, 172, 0.1);
 }
 
@@ -94,9 +94,7 @@ main {
 
 @media (min-width: 740px) {
   .image-container {
-    padding-top: 41px;
-    padding-left: 41px;
-    padding-right: 41px;
+    padding: 41px 41px 0;
   }
 
   .image-container img {
@@ -106,8 +104,7 @@ main {
 
 section,
 header {
-  margin-left: 41px;
-  margin-right: 41px;
+  margin: 0 41px;
 }
 
 img {
@@ -122,7 +119,7 @@ header h1 {
   font-size: 40px;
   color: var(--stone-900);
   font-weight: 400;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
 }
 
 .ingredients h2,
@@ -132,13 +129,12 @@ header h1 {
   font-size: 28px;
   color: var(--brown-800);
   font-weight: 400;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
 }
 
 article h2 {
   color: var(--rose-800);
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding: 15px 0;
   font-size: 20px;
 }
 
@@ -161,36 +157,19 @@ p {
 }
 
 /* Lists */
-ul {
-  padding-bottom: 25px;
-  list-style-type: none;
-}
-
-ul li::before {
-  content: ". ";
-  color: var(--rose-800);
-  margin-right: 20px;
-  font-weight: 600;
-}
-
+ul,
 ol {
-  padding-left: 20px;
-  padding-bottom: 25px;
-}
-
-.ingredients ul {
   padding-bottom: 25px;
 }
 
 li {
-  line-height: 27.3px;
+  line-height: 27px;
   padding-bottom: 3px;
+  padding-left: 20px;
+  margin-left: 25px;
 }
 
-ol li {
-  padding-left: 20px;
-}
-ol li::marker {
+::marker {
   color: var(--rose-800);
   font-weight: 600;
   font-size: 18px;
@@ -206,16 +185,14 @@ ol li::marker {
 .row h3,
 .last-row h3 {
   flex: 1;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding: 11px 0;
   font-weight: 400;
 }
 
 .row p,
 .last-row p {
   flex: 1;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding: 11px 0;
   color: var(--brown-800);
   font-weight: 600;
 }
