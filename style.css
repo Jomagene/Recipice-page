@@ -65,8 +65,8 @@ main {
   background-color: var(--white);
   width: 737px;
   border-radius: 20px;
-  padding: 39px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 41px;
+  box-shadow: 0 4px 8px rgba(172, 172, 172, 0.1);
 }
 
 .image-container {
@@ -81,7 +81,7 @@ img {
 }
 h1 {
   font-family: "Young Serif";
-  font-size: 42px;
+  font-size: 40px;
   color: var(--stone-900);
   font-weight: 400;
   padding-bottom: 15px;
@@ -91,7 +91,7 @@ h2 {
   font-size: 28px;
   color: var(--brown-800);
   font-weight: 400;
-  padding-bottom: 25px;
+  padding-bottom: 18px;
 }
 h3 {
   color: var(--rose-800);
@@ -100,11 +100,9 @@ h3 {
 }
 .presentation p {
   color: var(--stone-600);
-  padding-bottom: 35px;
+  padding-bottom: 30px;
 }
-.nutrition p {
-  padding-bottom: 15px;
-}
+
 p {
   padding-bottom: 15px;
   line-height: 25px;
@@ -113,7 +111,7 @@ p {
 .presentation div {
   background-color: var(--rose-50);
   border-radius: 10px;
-  padding: 10px 35px;
+  padding: 20px 30px 10px;
   color: var(--stone-900);
 }
 .presentation ul {
@@ -126,13 +124,9 @@ ol {
   padding-left: 45px;
   padding-bottom: 25px;
 }
-ul::marker {
-  padding-right: 50px;
-}
-
 li {
-  line-height: 25px;
-  padding-bottom: 6px;
+  line-height: 26px;
+  padding-bottom: 5px;
 }
 
 .border-bot {
@@ -140,17 +134,34 @@ li {
 }
 .row {
   width: 100%;
+  padding-left: 30px;
 }
 .row h4 {
   flex: 1;
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   font-weight: 400;
 }
 .row p {
   flex: 1;
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 11px;
+  color: var(--brown-800);
+  font-weight: 600;
+}
+.last-row {
+  width: 100%;
+  padding-left: 30px;
+}
+.last-row h4 {
+  flex: 1;
+  padding-top: 12px;
+  font-weight: 400;
+}
+.last-row p {
+  flex: 1;
+  padding-top: 12px;
+  padding-bottom: 0;
   color: var(--brown-800);
   font-weight: 600;
 }
