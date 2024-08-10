@@ -163,7 +163,7 @@ ol {
 }
 
 li {
-  line-height: 27px;
+  line-height: 25px;
   padding-bottom: 3px;
   padding-left: 20px;
   margin-left: 25px;
@@ -185,14 +185,14 @@ li {
 .row h3,
 .last-row h3 {
   flex: 1;
-  padding: 11px 0;
+  padding: 10px 0;
   font-weight: 400;
 }
 
 .row p,
 .last-row p {
   flex: 1;
-  padding: 11px 0;
+  padding: 10px 0;
   color: var(--brown-800);
   font-weight: 600;
 }
