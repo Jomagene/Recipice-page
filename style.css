@@ -92,8 +92,7 @@ body {
 
 @media (min-width: 46.25rem) {
   body {
-    padding-top: 125px;
-    padding-bottom: 125px;
+    padding: 7.8125rem 0;
   }
 }
 
@@ -139,7 +138,7 @@ header h1 {
   font-size: 2.5rem;
   color: var(--stone-900);
   font-weight: 400;
-  padding-bottom: 15px;
+  padding-bottom: 0.9375rem;
 }
 
 .ingredients h2,
@@ -182,7 +181,7 @@ ol {
 }
 
 li {
-  padding-bottom: 0.1875rem;
+  padding-bottom: 0.328125rem;
   padding-left: 1.25rem;
   margin-left: 1.5625rem;
 }
